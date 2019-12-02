@@ -1,0 +1,41 @@
+.d-block{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.smaller{
+    height: 66vh;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.navbar.solid {
+    background-color: rgb(245, 154, 51);
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 6px grey;
+}
+
+.card-columns{
+    margin: 2vh;
+}
+
+.card-group{
+    margin: 2vh;
+}
+
+.bgImgCenter{
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    height: 66%;
+}
+
+.bgImgCenter.dom{
+    background-image: url('../img/prsten.jpg');
+}
+
+.bgImgCenter.anka{
+    background-image: url('../img/anka.jpg');
+}
