@@ -1,4 +1,4 @@
-.d-block{
+.slider{
     height: 100vh;
     object-fit: cover;
 }
@@ -7,14 +7,18 @@
     height: 66vh;
 }
 
-.navbar{
-    background-color: rgba(0, 0, 0, 0.082);
+.main-menu{
+    background-color: rgba(0, 0, 0, 0.397);
 }
 
-.navbar.solid {
-    background-color: rgb(245, 154, 51);
+.main-menu.solid {
+    background-color: #cc5100;
     transition: background-color 1s ease 0s;
     box-shadow: 0 0 6px grey;
+}
+
+img.logo{
+    height: 5vh;
 }
 
 .card-columns{
@@ -29,7 +33,7 @@
     background-repeat: no-repeat;
     background-position: center; 
     position: relative;
-    height: 66%;
+    height: 85vh;
 }
 
 .bgImgCenter.dom{
@@ -38,4 +42,55 @@
 
 .bgImgCenter.anka{
     background-image: url('../img/anka.jpg');
+}
+
+.col-centered{
+    margin: auto;
+}
+
+.page-footer{
+    background-color: black;
+}
+
+.card{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.card:hover{
+    border-color: #cc5100;
+    transform: scale(1.02);
+    transition: 0.6s;
+}
+
+.description{
+    padding: 2%;
+    max-width: 600px;
+}
+
+#popis-dom{
+    margin-left: auto;
+    text-align: justify;
+}
+
+#popis-anka{
+    margin-right: auto;
+    text-align: justify;
+}
+
+.btn.btn-primary.btn-put{
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #cc5100;
+}
+
+.btn.btn-primary.btn-put:hover{
+    background-color: #cc5100;
+    border-color: #cc5100;
+    color: #ffffff;
+}
+
+.menu-put{
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px -5px grey;
 }

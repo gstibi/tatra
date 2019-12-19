@@ -7,42 +7,42 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" >
     
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    
-        <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
-            <div class="container">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Domček</a>
-                <div class="collapse navbar-collapse" id="navbar1">
-                    <ul class="navbar-nav"> 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">O Domčeku</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Bl Anka</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="vsetky_pute.html">Púte</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Kontakty</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Prihlásiť</a>
-                        </li>
-                    </ul>
-                </div>
+
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark main-menu">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="#navbar1" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/222x68.png">
+            </a>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">O Domčeku</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Bl Anka</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="vsetky_pute.html">Púte</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Kontakty</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Prihlásiť</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
     <div class="bd-example">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -53,7 +53,7 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="img/_A7_2457.jpg" class="d-block w-100" alt="...">
+                  <img src="img/_A7_2457.jpg" class="slider w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Top príspevok pecka niečo</h5>
                     <p>Napr aj odkaz alebo tlačidlo na púť<br>
@@ -116,45 +116,49 @@
     </div>
 
     <div class="bgImgCenter dom">
-        <h3>Domček</h3>
-        <p>
-            Krátky text o domčeku a za nim link na celý popis
-            <br><br>
-            Pastoračné centrum Anny Kolesárovej - centrum mladých vo Vysokej nad Uhom - slúži predovšetkým mladým, ktorým ponúka miesto pokoja, radosti zo stretnutia s inými, načerpanie nových síl a pookriatie na duchu.
+        <div class="description" id="popis-dom">
+            <h3>Domček</h3>
+            <p>
+                Krátky text o domčeku a za nim link na celý popis
+                <br><br>
+                Pastoračné centrum Anny Kolesárovej - centrum mladých vo Vysokej nad Uhom - slúži predovšetkým mladým, ktorým ponúka miesto pokoja, radosti zo stretnutia s inými, načerpanie nových síl a pookriatie na duchu.
 
-            V Domčeku sa narodil a žil jezuita páter Michal Potocký, ktorý bol prvý horliteľ za blahorečenie Anky Kolesárovej. Od počiatku pútí sme tento Domček využívali počas stretnutí alebo duchovných obnov.
-            Nadácia J. Murgaša nám kúpila tento Domček (sme im zato veľmi vďační), ktorý sme si za pomoci mladých dobrovoľníkov, dobrodincov a sponzorov opravili.
-            <br><br>
-            <button class="btn btn-warning">Viac o Domčeku</button>
-        </p>
+                V Domčeku sa narodil a žil jezuita páter Michal Potocký, ktorý bol prvý horliteľ za blahorečenie Anky Kolesárovej. Od počiatku pútí sme tento Domček využívali počas stretnutí alebo duchovných obnov.
+                Nadácia J. Murgaša nám kúpila tento Domček (sme im zato veľmi vďační), ktorý sme si za pomoci mladých dobrovoľníkov, dobrodincov a sponzorov opravili.
+                <br><br>
+                <button class="btn btn-warning">Viac o Domčeku</button>
+            </p>
+        </div>
     </div>
 
     <div class="bgImgCenter anka">
-        <h3>Bl. Anka Kolesárová</h3>
-        <p>
-            Krátky text o Anke a za nim link na celý popis
-            <br><br>
-            Koncom druhej svetovej vojny sa pri prechode frontu ľudia vo Vysokej nad Uhom ukrývali v pivniciach. Aj Ján Kolesár, prezývaný Hruška, bol s rodinou a susedmi v pivnici pod kuchyňou. Pri prehliadke domu jeden opitý vojak sovietskej armády nazrel dnu. Keď zbadal jeho 16 - ročnú dcéru Annu, začal ju ťahať von. Hrozil jej, že ak sa mu neoddá, zastrelí ju. Ona však nesúhlasila, vytrhla sa mu z rúk a skočila do pivnice. Vojak za ňou. Namieril na ňu automat a povedal: "Rozlúč sa s "
-            <br><br>
-            <button class="btn btn-warning">Viac o Anke</button>
-        </p>
+        <div class="description" ip="popis-anka">
+            <h3>Bl. Anka Kolesárová</h3>
+            <p>
+                Krátky text o Anke a za nim link na celý popis
+                <br><br>
+                Koncom druhej svetovej vojny sa pri prechode frontu ľudia vo Vysokej nad Uhom ukrývali v pivniciach. Aj Ján Kolesár, prezývaný Hruška, bol s rodinou a susedmi v pivnici pod kuchyňou. Pri prehliadke domu jeden opitý vojak sovietskej armády nazrel dnu. Keď zbadal jeho 16 - ročnú dcéru Annu, začal ju ťahať von. Hrozil jej, že ak sa mu neoddá, zastrelí ju. Ona však nesúhlasila, vytrhla sa mu z rúk a skočila do pivnice. Vojak za ňou. Namieril na ňu automat a povedal: "Rozlúč sa s "
+                <br><br>
+                <button class="btn btn-warning">Viac o Anke</button>
+            </p>
+        </div>
     </div>
 
     <h1>Čo ďalej?</h1>
         
     <div class="card-group">
-        <div class="card">
-            <a href="pute.html" class="stretched-link">
+        <div class="card mb-3">
+            <a href="vsetky_pute.html" class="stretched-link">
                 <img src="img/cesta.jpg" class="card-img-top" alt="...">
             </a>
             <div class="card-body">
-                <h5 class="card-title">Akcia ktora bude najblizsie</h5>
+                <h5 class="card-title">Všetky púte</h5>
                 <p class="card-text">Púť radosti je stretnutím mladých vo veku od 15 rokov </p>
             </div>
         </div>
 
-        <div class="card">
-            <a href="pute.html" class="stretched-link">
+        <div class="card mb-3">
+            <a href="#" class="stretched-link">
                 <img src="img/fest2.jpg" class="card-img-top" alt="...">
             </a>
             <div class="card-body">
@@ -163,8 +167,8 @@
             </div>
         </div>
 
-        <div class="card">
-        <a href="pute.html" class="stretched-link">
+        <div class="card mb-3">
+        <a href="#" class="stretched-link">
             <img src="img/prijatie.jpg" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
@@ -173,11 +177,6 @@
         </div>
         </div>
     </div>
-
-    
-    <button class="btn btn-warning">Prihlásiť</button>
-    <p>Alebo</p>
-    <button class="btn btn-warning">Zaregistrovať</button>
 
     
     <!-- Footer -->
