@@ -1,67 +1,106 @@
+:root {
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+	--primary: #cc5100;
+	--secondary: #6c757d;
+	--success: #2ab27b;
+	--info: #8eb4cb;
+	--warning: #cbb956;
+	--danger: #bf5329;
+	--light: #f8f9fa;
+	--dark: #343a40;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: "Raleway", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --zoom: 1.05;
+}
+
+.content{
+    padding: 3vh 3vw;
+}
+
+/*******************************************
+nadpisy
+*/
+
+h1{
+    color: var(--primary);
+    margin: 0;
+}
+
+.h-white{
+    color: white;
+}
+
+.line{
+    width: 125px;
+    height: 50px;
+    border-bottom: 5px solid var(--primary);
+    max-height: 0.75em;
+    margin-bottom: 20px;
+    }
+
+p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+}
+
+/*******************************************
+obrazky
+*/
 .slider{
     height: 100vh;
     object-fit: cover;
 }
 
-.smaller{
-    height: 66vh;
-}
-
-.main-menu{
-    background-color: rgba(0, 0, 0, 0.397);
-}
-
-.main-menu.solid {
-    background-color: #cc5100;
-    transition: background-color 1s ease 0s;
-    box-shadow: 0 0 6px grey;
-}
-
-img.logo{
-    height: 5vh;
-}
-
-.card-columns{
-    margin: 2vh;
-}
-
-.card-group{
-    margin: 2vh;
+.smaller-slider{
+    height: 40vh;
 }
 
 .bgImgCenter{
     background-repeat: no-repeat;
     background-position: center; 
     position: relative;
-    height: 85vh;
+    height: 75vh;
+    transition: 0.6s;
 }
 
-.bgImgCenter.dom{
+#dom{
     background-image: url('../img/prsten.jpg');
 }
 
-.bgImgCenter.anka{
+#anka{
     background-image: url('../img/anka.jpg');
+    background-position: right;
 }
 
-.col-centered{
-    margin: auto;
+#popis-dom{
+    color: white;
 }
 
-.page-footer{
-    background-color: black;
+img.logo{
+    height: 5vh;
 }
 
-.card{
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.card:hover{
-    border-color: #cc5100;
-    transform: scale(1.02);
-    transition: 0.6s;
-}
+/*******************************************
+popisy
+*/
 
 .description{
     padding: 2%;
@@ -78,19 +117,57 @@ img.logo{
     text-align: justify;
 }
 
-.btn.btn-primary.btn-put{
-    background-color: #ffffff;
-    border-color: #ffffff;
-    color: #cc5100;
+.main-menu{
+    background-color: rgba(0, 0, 0, 0.397);
+    transition: background-color 1s ease 0s;
 }
 
-.btn.btn-primary.btn-put:hover{
-    background-color: #cc5100;
-    border-color: #cc5100;
-    color: #ffffff;
+.solid {
+    background-color: var(--primary);
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 6px grey;
 }
 
-.menu-put{
-    background-color: #ffffff;
-    box-shadow: 0 5px 5px -5px grey;
+/*******************************************
+karty
+*/
+
+.card-columns{
+    margin: 2vh;
+}
+
+.card{
+    border-width: 0;
+    margin: 4vh 4vw;
+    background-color: var(--light);
+    transition: 0.6s;
+}
+
+.card:hover{
+    border-width: 0;
+    transform: scale(var(--zoom));
+}
+
+.col-centered{
+    margin: auto;
+}
+
+.page-footer{
+    background-color: black;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+#sipka{
+    height: 7vh;
+    width: 7vh;
+    transition: 0.6s;
+    overflow: hidden;
+}
+
+#sipka:hover{
+    transform: scale(var(--zoom));
 }
