@@ -1,0 +1,385 @@
+:root {
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+    --primary: #ef5d24;
+    --primary2: #ff7300e0;
+	--secondary: #6c757d;
+	--success: #2ab27b;
+	--info: #8eb4cb;
+	--warning: #cbb956;
+	--danger: #bf5329;
+	--light: #f8f9fa;
+    --dark: #343a40;
+    --shadow: #676b6e2c;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: sfprotext_regular, sans-serif;
+    --font-family-monospace: sfprotext_regular;
+    --zoom: 1.02;
+}
+
+.content{
+    padding: 3vh 3vw;
+}
+
+
+@font-face {
+    font-family: sfprotext_light;
+    src:url("SFProText-Light.ttf");
+}
+
+@font-face {
+    font-family: sfprotext_medium;
+    src:url("SFProText-Medium.ttf");
+}
+
+@font-face {
+    font-family: sfprotext_regular;
+    src:url("SFProText-Regular.ttf");
+}
+
+@font-face {
+    font-family: sfprotext_semibold;
+    src:url("SFProText-Semibold.ttf");
+}
+
+@font-face {
+    font-family: sfprotext_bold;
+    src:url("SFProText-bold.ttf");
+}
+
+@font-face {
+    font-family: sfprotext_italic;
+    src:url("SFProText-MediumItalic.ttf");
+}
+
+/*******************************************
+nadpisy
+*/
+
+body{
+    font-family: sfprotext_light;
+}
+
+.navbar{
+    font-family: sfprotext_regular;
+}
+
+.btn{
+    font-family: sfprotext_semibold;
+    font-size: 0.9rem;
+}
+
+h1{
+    color: var(--primary);
+    margin: 0;
+    font-family: sfprotext_semibold;
+}
+
+.h-white{
+    color: white;
+}
+
+.line{
+    width: 125px;
+    height: 50px;
+    border-bottom: 5px solid var(--primary);
+    max-height: 0.75em;
+    margin-bottom: 20px;
+    }
+
+p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+}
+
+/*******************************************
+obrazky
+*/
+.slider{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.smaller-slider{
+    height: 40vh;
+}
+
+.bgImgCenter{
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    height: 80vh;
+    transition: 0.7s;
+    padding-bottom: 5vh;
+}
+
+#dom{
+    background-image: url('../img/prsten.jpg');
+    background-size: cover;
+    box-shadow: 0vh 0vh 10vh var(--shadow);
+}
+
+#anka{
+    background-image: url('../img/anka-bw.jpg');
+    background-size: cover;
+    background-position: 60%;
+    box-shadow: 0vh 0vh 10vh var(--shadow);
+}
+
+#popis-dom{
+    color: white;
+}
+
+img.logo{
+    height: 5vh;
+}
+
+/*******************************************
+popisy
+*/
+
+.description{
+    padding: 3%;
+    max-width: 600px;
+}
+
+#popis-dom{
+    margin-left: auto;
+    text-align: justify;
+}
+
+#popis-anka{
+    margin-right: auto;
+    text-align: justify;
+}
+
+.main-menu{
+    background-color: rgba(0, 0, 0, 0.397);
+    transition: background-color 1s ease 0s;
+}
+
+.side-menu {
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    top: 45vh;
+    left: 3vh;
+    overflow-x: hidden;
+    border-width: 0;
+    background-color: var(--light);
+    transition: 0.6s;
+    box-shadow: 0vh 0vh 1.5vh var(--shadow);
+}
+
+.side-menu:hover{
+    transform: scale(var(--zoom));
+}
+
+@media screen and (max-width: 768px) {
+    .side-menu {position: static}
+}
+
+.side-menu a{
+    color: var(--dark);
+    display: block;
+    padding: 5%;
+    text-decoration: none;
+}
+
+.side-menu a:hover{
+    background-color: var(--dark);
+    color: white;
+}
+
+.side-menu-name{
+    color: white;
+    background-color: var(--primary);
+    padding: 5%;
+}
+
+.list-group-item{
+    padding: 0;
+}
+
+
+
+/*******************************************
+karty
+*/
+
+.card-columns{
+    margin: 2vh;
+}
+
+.card{
+    border-width: 0;
+    margin: 4vh 4vw;
+    background-color: var(--light);
+    transition: 0.6s;
+    box-shadow: 0vh 0vh 1.5vh var(--shadow);
+    max-height: 66vh;
+}
+
+.card img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title{
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.card:hover{
+    border-width: 0;
+    transform: scale(var(--zoom));
+}
+
+.stretched-link{
+    height: 50%;
+    overflow: hidden;
+}
+
+.col-centered{
+    margin: auto;
+}
+
+.page-footer{
+    margin-top: 10vh;
+    background-color: var(--dark);
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+#sipka{
+    height: 4vh;
+    width: 4vh;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#sipka:hover{
+    transform: scale(1.25);
+}
+
+/*********************************
+tlacidla
+*/
+
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary2);
+    border-color: var(--primary2);
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+	-webkit-box-shadow: 0 0 0 .2rem var(--primary2);
+	box-shadow: 0 0 0 .2rem var(--primary2);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: var(--primary2);
+	border-color: var(--primary2)
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+	-webkit-box-shadow: 0 0 0 .2rem var(--primary2);
+	box-shadow: 0 0 0 .2rem var(--primary2);
+}
+
+/*************************
+navigacia
+*/
+
+.page-link{
+	display: block;
+	color: white;
+	background-color: var(--dark);
+	border: 1px solid #dee2e6
+}
+
+.page-link:hover {
+	color: var(--primary2);
+    text-decoration: none;
+    color: white;
+	background-color: var(--primary);
+	border-color: var(--primary2)
+}
+
+.page-link:focus {
+	z-index: 2;
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 .2rem var(--primary2);
+	box-shadow: 0 0 0 .2rem var(--primary2)
+}
+
+/******************************
+bocny panel s aktualitamy
+*/
+
+.aktuality-menu{
+    border-width: 5px;
+    overflow: hidden;
+}
+
+.aktuality-menu .card{
+    margin: 0;
+    max-height: 30%;
+}
+
+.aktuality-menu .list-group-item{
+    border-width: 0;
+}
+
+.aktuality-menu .btn-dark{
+    width: 100%;
+    height: 10%;
+    border-radius: 0;
+}
+
+.aktuality-menu .stretched-link{
+    height: 15vh;
+}
+
+/*********************************
+navbar
+*/
+
+.nav-link{
+    display: block;
+}
+
+.solid {
+    background-color: var(--primary);
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 6px grey;
+}
