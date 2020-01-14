@@ -14,6 +14,7 @@
 	--gray-dark: #343a40;
     --primary: #ef5d24;
     --primary2: #ff7300e0;
+    --navbarfontcolor: #ffa256e0;
 	--secondary: #6c757d;
 	--success: #2ab27b;
 	--info: #8eb4cb;
@@ -32,8 +33,9 @@
     --zoom: 1.02;
 }
 
+
 .content{
-    padding: 3vh 3vw;
+    padding: 5vh 5vw;
 }
 
 
@@ -66,7 +68,6 @@
     font-family: sfprotext_italic;
     src:url("SFProText-MediumItalic.ttf");
 }
-
 /*******************************************
 nadpisy
 */
@@ -76,7 +77,9 @@ body{
 }
 
 .navbar{
-    font-family: sfprotext_regular;
+    font-family: sfprotext_semibold;
+    letter-spacing: -0.06rem;
+    text-transform: uppercase;
 }
 
 .btn{
@@ -130,13 +133,14 @@ obrazky
 }
 
 #dom{
-    background-image: url('../img/prsten.jpg');
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.637) 0%, rgba(0, 0, 0, 0.514) 100%), url('../img/prsten.jpg');
+    background-position-y: 30%;
     background-size: cover;
     box-shadow: 0vh 0vh 10vh var(--shadow);
 }
 
 #anka{
-    background-image: url('../img/anka-bw.jpg');
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.301) 0%, rgba(241, 241, 241, 0.253) 100%), url('../img/anka-bw.jpg');
     background-size: cover;
     background-position: 60%;
     box-shadow: 0vh 0vh 10vh var(--shadow);
@@ -146,17 +150,13 @@ obrazky
     color: white;
 }
 
-img.logo{
-    height: 5vh;
-}
-
 /*******************************************
 popisy
 */
 
 .description{
-    padding: 3%;
-    max-width: 600px;
+    padding: 5%;
+    max-width: 800px;
 }
 
 #popis-dom{
@@ -170,8 +170,13 @@ popisy
 }
 
 .main-menu{
-    background-color: rgba(0, 0, 0, 0.397);
-    transition: background-color 1s ease 0s;
+    background-color: rgba(0, 0, 0, 0.61);
+    transition: all ease-in-out 1s;
+}
+
+.main-menu.index{
+    background-color: rgba(0, 0, 0, 0);
+    transition: all ease-in-out 1s;
 }
 
 .side-menu {
@@ -189,10 +194,6 @@ popisy
 
 .side-menu:hover{
     transform: scale(var(--zoom));
-}
-
-@media screen and (max-width: 768px) {
-    .side-menu {position: static}
 }
 
 .side-menu a{
@@ -268,6 +269,7 @@ karty
 .page-footer a {
     text-decoration: none;
     color: var(--light);
+    font-size: 0.7rem;
 }
 
 #sipka{
@@ -374,12 +376,71 @@ bocny panel s aktualitamy
 navbar
 */
 
+img.logo{
+    transition: 1s ease 0s;
+    height: 3rem;
+    padding-right: 3rem;
+}
+
+img.logo:hover{
+    transform: scale(1.02);
+}
+
+img.logo.change-size{
+    transition: 1s ease 0s;
+    height: 2rem;
+}
+
+.topnav{
+    transition: ease-in-out 1s;
+    background-color: rgb(0,0,0,0);
+}
+
 .nav-link{
     display: block;
 }
 
 .solid {
     background-color: var(--primary);
-    transition: background-color 1s ease 0s;
+    transition: ease-in-out 1s;
+    padding: 0.5rem;
     box-shadow: 0 0 6px grey;
+    font-size: 0.9rem;
+}
+
+nav .navbar-nav li a:hover{
+    transition: ease-in-out 0.3s;
+    color: var(--navbarfontcolor) !important;
+    transform: scale(1.01);
+}
+
+nav .navbar-nav.fontcolor li a:hover{
+    transition: ease-in-out 0.3s;
+    color: var(--light) !important;
+    transform: scale(1.01);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .side-menu {position: static}
+
+    .description{
+        padding:8%;
+    }
+
+    .content{
+        padding:8%;
+    }
+
+    #dom{
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.589)), url('../img/prsten.jpg');
+        background-position-y: 30%;
+        background-position-x: 30%;
+    }
+
+    #anka{
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.301) 0%, rgba(241, 241, 241, 0.884) 100%), url('../img/anka-bw.jpg');
+        background-size: cover;
+        background-position: 60%;
+    }
 }
