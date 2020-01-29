@@ -13,16 +13,5 @@ $(document).ready(function() {
         $('.logo').removeClass('change-size');
         $('.navbar-nav').removeClass('fontcolor');
     }
-
-    //zistuje ci si na index.html --> dat pozor pri deployment alebo dat do noveho scriptu
-    var href = document.location.href;
-    console.log(href)
-    var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
-    if($(this).scrollTop() > 100 && lastPathSegment =='index.html'){
-      $('.main-menu').addClass('topnav');
-    } else {
-      $('.main-menu').removeClass('topnav');
-    }
-  
   });
 });

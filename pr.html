@@ -17,30 +17,71 @@
 <body>
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark main-menu">
-        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="#navbar1" data-target="#navbar1">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-                <img class="logo" src="img/222x68.png" id="logo">
+                <img class="logo" src="img/222x68-color.png" id="logo">
             </a>
-            <div class="collapse navbar-collapse" id="navbar1">
-                <ul class="navbar-nav ml-auto">
+            <div class="navbar-collapse flex-grow-0 collapse" id="navbar1">
+                <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="aktuality.html">Aktuality</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">O Domčeku</a>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            
+                            <a class="nav-link active dropdown-toggle" href="#" id="dropdown-domcek" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">O Domčeku</a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdown-domcek">
+                                <a class="dropdown-item" href="domcek.html">Domček</a>
+                                <a class="dropdown-item" href="domcek.html">Rozvoj a poslanie</a>
+                                <a class="dropdown-item" href="domcek.html">Tím domčeka</a>
+                                <a class="dropdown-item" href="domcek.html">Logo</a>
+                                <a class="dropdown-item" href="domcek.html">Prístavba Centrum pre mládež</a>
+                                <a class="dropdown-item" href="domcek.html">ARS - dom pre kňazov</a>
+                                <a class="dropdown-item" href="domcek.html">Timček</a>
+                                <a class="dropdown-item" href="domcek.html">Dom sv. Jozefa</a>
+                                <a class="dropdown-item" href="domcek.html">Kniha čistých sŕdc</a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Bl. Anka</a>
+
+                    
+                    <li class="nav-item">
+                        <div class="dropdown">
+
+                            <a class="nav-link active dropdown-toggle" href="" id="dropdown-anka" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bl. Anka</a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdown-anka">
+                                <a class="dropdown-item" href="anka.html">Príbeh</a>
+                                <a class="dropdown-item" href="anka.html">Blahorečenie</a>
+                                <a class="dropdown-item" href="anka.html">Publikácie</a>
+                                <a class="dropdown-item" href="anka.html">Svedectvá</a>
+                            </div>
+                        </div>
                     </li>
+
                     <li class="nav-item active">
                         <a class="nav-link" href="vsetky_pute.html">Púte</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Dobrodinci</a>
+
+                    <li class="nav-item" >
+                        <div class="dropdown">
+                            
+                            <a class="nav-link active dropdown-toggle" href="" id="dropdown-dobrodinci" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dobrodinci</a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdown-dobrodinci">
+                                <a class="dropdown-item" href="#">Nadácia Jozefa Murgaša</a>
+                                <a class="dropdown-item" href="#">Daruj 2% (3%)</a>
+                                <a class="dropdown-item" href="#">Klub priateľov Anky Kolesárovej</a>
+                                <a class="dropdown-item" href="#">Ľudia a firmy</a>
+                            </div>
+                        </div>
                     </li>
+
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Archív</a>
                     </li>
@@ -55,6 +96,7 @@
         </div>
     </nav>
 
+
     <img src="img/plagatSLIDER.jpg" class="slider w-100 smaller-slider" alt="...">
 
     <div class="content">
@@ -64,7 +106,7 @@
         
             <div class="col-md-2">
 
-                <div class="side-menu">
+                <div class="side-menu sticky">
                     <ul class="list-group">
                         <li class="list-group-item">
                             <div class="side-menu-name">
@@ -76,6 +118,7 @@
                         <li class="list-group-item"><a href="#">Program</a></li>
                         <li class="list-group-item"><a href="#">Info</a></li>
                         <li class="list-group-item"><a href="#">Prihlasovanie</a></li>
+                        <li class="list-group-item"><a class="btn btn-light" id="zobraz-vsetky" href="vsetky_pute.html">Všetky púte</a></li>
                     </ul>
                   </div>
             </div>
