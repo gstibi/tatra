@@ -116,6 +116,8 @@ p{
 obrazky
 */
 .slider{
+    background-image: url("../img/_A7_2457.jpg");
+    background-size: cover;
     height: 100vh;
     object-fit: cover;
 }
