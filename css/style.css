@@ -116,7 +116,6 @@ p{
 obrazky
 */
 .slider{
-    height: 100vh;
     object-fit: cover;
 }
 
